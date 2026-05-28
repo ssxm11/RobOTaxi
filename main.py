@@ -58,7 +58,7 @@ while running:
                 pygame.draw.rect(screen, (200, 200, 200), rect)
                         
             elif valor == 3:
-                # Ubicación especial - rojo
+                # flujo vehicular alto - rojo
                 pygame.draw.rect(screen, (255, 100, 100), rect)
 
             elif valor == 4:
@@ -76,6 +76,19 @@ while running:
                 pygame.draw.rect(screen, (200, 200, 200), rect)
                 screen.blit(taxi, (pos_x, pos_y))
 
+#logica de movimiento del taxi
+## 1
+# obtener la coordenada del taxi a partir de la matriz como punto de partida para el objeto
+
+# coordenadas definidas para el taxi
+    taxi_x = int((taxi_pos.x - OFFSET_X) / TAM)
+    taxi_y = int((taxi_pos.y - OFFSET_Y) / TAM)
+
+
+
+
+
+#movimiento de un circulo
     pygame.draw.circle(screen, "green", taxi_pos, 40)
 
     keys= pygame.key.get_pressed()
